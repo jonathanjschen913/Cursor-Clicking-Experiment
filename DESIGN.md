@@ -35,26 +35,28 @@ Submovements (velocity reversals and direction changes) are computed in real-tim
 ## Experiment Structure
 
 ### Trials
-- **5 trials per condition**
-- 27 conditions × 5 trials = **135 trials per participant**
-- Target experiment duration: ~30 minutes
+- **15 trials per condition**
+- 27 conditions × 15 trials = **405 trials per participant**
+- Target experiment duration: ~20-30 minutes
 
 ### Blocking and Ordering
-- **Technique order**: Counterbalanced across 3 participants using a **Latin square**
+- **Technique order (IV1)**: Counterbalanced across 3 participants using a **Latin square**
   - P1: Bubble → Point → Area
   - P2: Point → Area → Bubble
   - P3: Area → Bubble → Point
-- **Target size block order**: Same order for all techniques within a participant; counterbalanced across participants via **Latin square**
-  - P1: Large → Medium → Small
-  - P2: Small → Large → Medium
-  - P3: Medium → Small → Large
-- **Distance levels**: Randomized within each size sub-block
-- Within each size sub-block: 3 distance levels × 5 trials = 15 trials
+- **Size × Distance combinations (IV2 × IV3)**: All 9 combinations are **randomized** within each technique block
+- Within each condition: 15 consecutive trials
+
+### Practice
+- Before each technique, participants see a description of the cursor's look and feel
+- Free practice mode: participants click targets until comfortable, then press Space to begin real trials
+- Practice data is not logged
 
 ### Rest Breaks
-- Between technique blocks (when switching techniques)
-- Between size sub-blocks (when switching target size within a technique)
+- Between technique blocks (when switching techniques), preceded by practice for the new technique
+- Between each condition (every 15 trials) within a technique block
 - Participant clicks to continue after each break
+- Progress bar shows per-condition progress during trials and overall progress during breaks
 
 ## Target Presentation
 
