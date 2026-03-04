@@ -24,7 +24,7 @@ Distance is measured as Euclidean distance from the previous click location to t
 
 ## Dependent Variables
 
-1. **Selection time** (ms): Time from previous successful selection (or trial start) to current selection click
+1. **Selection time** (ms): Time from trial start (target highlight) to the participant's click. Every click (correct or error) ends the trial.
 2. **Error** (binary): Whether the participant clicked the wrong target (1) or correct target (0)
 3. **Error distance** (px): On errors, Euclidean distance from click point to nearest edge of the intended target. 0 on correct selections.
 4. **Velocity reversals** (count): Number of times mouse speed drops below a threshold then increases during the trial — indicates corrective submovements
@@ -61,17 +61,16 @@ Submovements (velocity reversals and direction changes) are computed in real-tim
 ## Target Presentation
 
 - Multiple targets (distractors + 1 highlighted target) displayed simultaneously
-- **Distractor count**: Auto-calculated based on target size to maintain consistent canvas coverage (density) across size levels
-- Targets persist within a size sub-block; only the highlight changes between trials
+- **Distractor count**: Auto-calculated based on target size to maintain consistent canvas coverage (density ~12%) across size levels
+- Targets are regenerated when target size or technique changes; they persist across trials within the same condition
 - Next highlighted target is chosen as the existing target closest to the specified distance from the last click location
-- Configurable option to regenerate targets each trial (default: persist within block)
 
 ## Frontend Display
 
-- **Dynamic fullscreen canvas**: Auto-sizes to browser window
-- **Progress bar**: Shows overall experiment completion
-- **Trial/block info**: Current technique, size level, trial number, block progress
-- **Feedback**: Brief correct/incorrect indicator after each trial selection
+- **Dynamic fullscreen canvas**: Auto-sizes to browser window; resizes are deferred to the next rest break if mid-trial
+- **Progress bar**: Shows per-condition progress (blue) during trials and overall progress (green) during rest breaks
+- **Trial/block info**: Current technique, size level, trial number displayed during trials
+- **Feedback**: Green/red border flash (300ms) after each click indicating correct/incorrect selection
 
 ## Data Output
 
