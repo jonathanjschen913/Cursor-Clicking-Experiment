@@ -21,7 +21,7 @@ Dependent variables logged: selection time, error, error distance, velocity reve
 ### Option A: GitHub Pages (recommended for participants)
 
 Visit the hosted version:
-**https://jonathanjschen913.github.io/CSC428-A2-cursor-experiment-/code5.html**
+**https://jonathanjschen913.github.io/Cursor-Clicking-Experiment/code5.html**
 
 ### Option B: Local
 
